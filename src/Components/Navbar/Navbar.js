@@ -4,14 +4,16 @@ import React from 'react'
 function Navbar() {
     return (
         <nav className="navbar">
-            <img className="logo" src="/Images/logo.jpg" />
             <ul>
-                <li>dawd</li>
-                <li>awdaw</li>
-                <li>adwsaczx</li>
-                <li>czx</li>
-                <li>vxcvbvcb</li>
+                <li><a>Aktualności</a></li>
+                <li><a>O nas</a></li>
+                <li><a>Ekospotkania</a></li>
+                <li><a>Edukacja</a></li>
+                <li><a>Ciekawe</a></li>
+                <li><a>JEDEN PROCENT</a></li>
+                <li><a>Kontakt</a></li>
             </ul>
+            <img className="logo" src="/Images/logo.jpg" />
         </nav>
     )
 }
