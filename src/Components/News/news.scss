@@ -1,0 +1,69 @@
+@import "../../mainColor";
+.newsContainer {
+  height: 100vh;
+  h1 {
+    margin: 0.8rem 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .con {
+    text-align: center;
+  }
+  .date {
+    margin-bottom: -5px;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .preview {
+    margin-top: 0.3rem;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    width: 70vw;
+  }
+  .showMore {
+    padding: 0.1rem 0.4rem;
+    margin: 0.5rem auto 0 auto;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: unset;
+    color: $second;
+    transition: 0.3s color 0.2s;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $second;
+      z-index: -1;
+      transition: 0.3s all;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $second;
+      z-index: -1;
+      transition: 0.3s all;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+    &:hover {
+      color: white;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+}
