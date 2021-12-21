@@ -1,15 +1,20 @@
 @import "../../mainColor";
 .navbar {
+  padding: 0.5rem 0 1rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: $main;
+  background-image: linear-gradient($second, $second, rgba(24, 58, 29, 0));
+  justify-content: center;
   opacity: 0.93;
   .logo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
     height: 6.5rem;
     width: auto;
   }
   ul {
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,8 +22,8 @@
       position: relative;
       font-size: 1.1rem;
       margin: 0.5rem 1rem;
-      color: $second;
       list-style: none;
+      color: white;
       a {
         cursor: pointer;
       }

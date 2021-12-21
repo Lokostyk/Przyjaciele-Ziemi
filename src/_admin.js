@@ -1,0 +1,1 @@
+export const ADMIN_LINK = "https://przyjacieleziemi-db.herokuapp.com"

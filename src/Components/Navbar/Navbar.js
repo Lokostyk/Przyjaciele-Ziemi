@@ -13,7 +13,6 @@ function Navbar() {
                 <li><a>JEDEN PROCENT</a></li>
                 <li><a>Kontakt</a></li>
             </ul>
-            <img className="logo" src="/Images/logo.png" />
         </nav>
     )
 }

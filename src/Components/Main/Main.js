@@ -23,6 +23,7 @@ function Main() {
                 <h3>Przekaż<span className="gap"></span> <span>JEDEN PROCENT</span></h3>
             </div>
             <div className="background"></div>
+            <img className="logo" src="/Images/logo.png" />
         </section>
     )
 }
