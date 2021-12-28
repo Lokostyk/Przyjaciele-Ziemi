@@ -1,11 +1,21 @@
 @import "../../mainColor";
 .navbar {
-  padding: 0.5rem 0 1rem 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: linear-gradient($second, $second, rgba(24, 58, 29, 0));
   justify-content: center;
-  opacity: 0.93;
+  width: 100%;
+  z-index: 1;
+  .name {
+    padding: 0.1rem 0;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+    font-size: 0.9rem;
+  }
   .logo {
     position: fixed;
     right: 0;
@@ -14,18 +24,21 @@
     width: auto;
   }
   ul {
+    padding: 0.5rem 0 1rem 0;
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0.93;
     li {
       position: relative;
       font-size: 1.1rem;
       margin: 0.5rem 1rem;
       list-style: none;
-      color: white;
       a {
         cursor: pointer;
+        color: white;
+        text-decoration: none;
       }
       &::before {
         content: "";

@@ -2,8 +2,6 @@ import "./main.scss"
 import React,{useEffect, useRef} from 'react'
 import gsap from "gsap"
 
-import Navbar from "../Navbar/Navbar"
-
 function Main() {
     let mainRef = useRef(null)
     useEffect(()=>{
@@ -15,8 +13,6 @@ function Main() {
     },[mainRef])
     return (
         <section className="mainContainer" ref={(e)=> mainRef = e}>
-            <div className="name">Polski Klub Ekologiczny "Przyjaciele Ziemi" w Stalowej Woli</div>
-            <Navbar />
             <div className="slogans">
                 <h1>Zielona Stalowa</h1>
                 <h2>Dołącz<span></span> do nas!</h2>
