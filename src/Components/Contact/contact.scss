@@ -1,3 +1,26 @@
-#map {
-  height: 300px;
+@import "../../mainColor";
+.leaflet-container {
+  height: 450px;
+  width: 700px;
+  border-bottom-right-radius: 2rem;
+  border: 1px solid $second;
+  border-top: none;
+  border-left: none;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .contactData {
+    margin: 0.1rem auto;
+    text-align: center;
+  }
+  pre {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .phone {
+    color: red;
+  }
 }

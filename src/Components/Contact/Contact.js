@@ -12,6 +12,7 @@ function Contact() {
     useEffect(()=>{
         axios.get(`${ADMIN_LINK}/api/contacts/1`)
         .then(res=>{
+            console.log(res.data.data)
             setContact(res.data.data)
             setLoading(false)
         })
@@ -21,12 +22,18 @@ function Contact() {
         <>
         {loading?
             <div>Loading</div>:
-            <section key={contact.id}>
-                {/* <Map /> */}
-                <div>
-                    <pre>{contact.attributes.Postawowe_Informacje}</pre>
+            <div className="contactContainer" key={contact.id}>
+                <Map x={contact.attributes.Koordynaty_X} y={contact.attributes.Koordynaty_Y}/>
+                <div className="contactData">
+                    <pre>
+                        <h2>Odwiedź nas lub zadzwoń!</h2>
+                        {contact.attributes.Postawowe_Informacje}
+                    </pre>
+                    <pre>{contact.attributes.Dyzury}</pre>
+                    <pre className="phone">{contact.attributes.Telefon}</pre>
+                    <pre>{contact.attributes.Dodatkowe_informacjie}</pre>
                 </div>
-            </section>
+            </div>
         }
         </>
     )

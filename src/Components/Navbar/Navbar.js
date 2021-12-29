@@ -7,7 +7,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="name">Polski Klub Ekologiczny "Przyjaciele Ziemi" w Stalowej Woli</div>
             <ul>
-                <li><a>Aktualności</a></li>
+                <li><Link to="/">Aktualności</Link></li>
                 <li><a>O nas</a></li>
                 <li><a>Ekospotkania</a></li>
                 <li><a>Edukacja</a></li>

@@ -1,10 +1,15 @@
 import React from 'react'
-import { MapContainer, TileLayer } from 'react-leaflet'
+import { MapContainer, TileLayer,Marker } from 'react-leaflet'
 
-function Map(props) {
+function Map({x,y}) {
+    const position = [parseFloat(x),parseFloat(y)]
+    
     return (
-        <MapContainer>
-            <TileLayer />            
+        <MapContainer center={position} zoom={16}>
+                <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                <Marker position={position}></Marker>          
         </MapContainer>
     )
 }
