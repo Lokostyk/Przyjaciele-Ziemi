@@ -28,13 +28,13 @@
       color: white;
     }
     h1 {
-      margin-left: 2rem;
+      margin-left: 0.8rem;
       font-size: 3.5rem;
-      word-spacing: 2.5rem;
+      word-spacing: 1rem;
       letter-spacing: 1px;
     }
     h2 {
-      margin-right: 0.5rem;
+      margin-left: 0.5rem;
       margin-top: 1rem;
       font-size: 3rem;
       span {
@@ -48,9 +48,13 @@
       .gap {
         margin: 0 1rem;
       }
+      a {
+        color: white;
+        text-decoration: none;
+      }
       span {
         position: relative;
-        &:hover {
+        &:hover a {
           color: $second;
         }
         &::before {

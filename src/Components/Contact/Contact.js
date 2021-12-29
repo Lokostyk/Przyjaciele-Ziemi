@@ -4,6 +4,7 @@ import axios from "axios"
 import {ADMIN_LINK} from '../../_admin'
 
 import Map from "./subcomponents/Map"
+import Loader from "../Other/Loader"
 
 function Contact() {
     const [contact,setContact] = useState()
@@ -21,7 +22,7 @@ function Contact() {
     return (
         <>
         {loading?
-            <div>Loading</div>:
+            <Loader style={{height:"100%",margin:"auto"}}/>:
             <div className="contactContainer" key={contact.id}>
                 <Map x={contact.attributes.Koordynaty_X} y={contact.attributes.Koordynaty_Y}/>
                 <div className="contactData">

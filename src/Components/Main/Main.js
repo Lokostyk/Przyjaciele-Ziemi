@@ -1,6 +1,7 @@
 import "./main.scss"
 import React,{useEffect, useRef} from 'react'
 import gsap from "gsap"
+import { Link } from "react-router-dom"
 
 function Main() {
     let mainRef = useRef(null)
@@ -16,7 +17,7 @@ function Main() {
             <div className="slogans">
                 <h1>Zielona Stalowa</h1>
                 <h2>Dołącz<span></span> do nas!</h2>
-                <h3>Przekaż<span className="gap"></span> <span>JEDEN PROCENT</span></h3>
+                <h3>Przekaż<span className="gap"></span> <span><Link to="/jeden_procent">JEDEN PROCENT</Link></span></h3>
             </div>
             <div className="background"></div>
             <img className="logo" src="/Images/logo.png" />

@@ -1,6 +1,7 @@
 @import "../../mainColor";
 .newsContainer {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   h1 {
     margin: 0.8rem 0;
     text-align: center;
@@ -15,11 +16,31 @@
     font-size: 0.9rem;
     font-style: italic;
   }
+  .article,
   .preview {
     margin-top: 0.3rem;
     font-size: 1.1rem;
     margin: 0 auto;
     width: 70vw;
+  }
+  .articleContainer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1.5s all;
+    img {
+      margin-top: 0.3rem;
+    }
+  }
+  .article {
+    text-align: center;
+    white-space: pre-line;
+  }
+  hr {
+    margin: 0.5rem auto;
+    width: 75vw;
+    background-color: $second;
+    height: 1px;
+    border-radius: 50%;
   }
   .showMore {
     padding: 0.1rem 0.4rem;

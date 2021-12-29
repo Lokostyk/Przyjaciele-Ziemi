@@ -12,7 +12,7 @@ function Navbar() {
                 <li><a>Ekospotkania</a></li>
                 <li><a>Edukacja</a></li>
                 <li><a>Ciekawe</a></li>
-                <li><a>JEDEN PROCENT</a></li>
+                <li><Link to="/jeden_procent">JEDEN PROCENT</Link></li>
                 <li><Link to="/kontakt">Kontakt</Link></li>
             </ul>
         </nav>

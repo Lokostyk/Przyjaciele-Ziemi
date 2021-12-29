@@ -1,0 +1,17 @@
+@import "../../mainColor";
+.oneContainer {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+  }
+  img {
+    margin: 0.4rem 0;
+  }
+  a,
+  h3 {
+    color: $second;
+  }
+}

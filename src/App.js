@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import Main from './Components/Main/Main'
 import News from './Components/News/News'
 import SideButtons from './Components/SideButtons/SideButtons'
+import OnePercent from './Components/OnePercent/OnePercent'
 
 function App() {
   const {pathname} = useLocation()
@@ -23,13 +24,19 @@ function App() {
         navbar.getElementsByTagName("ul")[0].style.marginBottom = "0"
       }
   },[pathname])
-
+  //Redirect
+  useEffect(()=>{
+    if(pathname === "/admin"){
+      window.location = "https://przyjacieleziemi-db.herokuapp.com/admin"
+    }
+  },[pathname])
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" exact element={<><Main/><News/><SideButtons/></>}/>
         <Route path="/kontakt" element={<Contact/>}/>
+        <Route path="/jeden_procent" element={<OnePercent />}/>
       </Routes>
     </>
   )
